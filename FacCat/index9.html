@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica em JS</title>
+</head>
+
+<body>
+    <h2>Exercício 9 Faccat</h2>
+    <p>
+        Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste.Calcular e escrever o valor do novo salário
+    </p>
+
+    <script>
+        var salarioAtual, reajuste, novoSalario;
+
+        alert("Vamos calcular o reajuste de salário do funcionário");
+
+        var salarioAtual = parseFloat(prompt("Digite o seu salário atual: "));
+        var reajuste = parseFloat(prompt("Digite a o reajuste em porcentagem que haverá no salário: "));
+
+        var novoSalario = parseFloat(salarioAtual * reajuste / 100 + salarioAtual);
+
+        alert("Seu novo salário será: " + novoSalario);
+
+    </script>
+</body>
+
+</html>

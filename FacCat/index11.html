@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+<body>
+    <p>Exibir salário de vendedor de carro
+
+    </p>
+
+    <script>
+        let salarioFinal;
+        let comissaoFixa;
+        let valorVenda;
+        let salariofixo;
+        let carrosVendidos;
+
+        salariofixo = parseFloat (prompt("Digite o valor do salário fixo:"))
+        carrosVendidos = parseFloat(prompt("Digite quantos carros você vendeu este mês:"))
+        valorVenda = parseFloat(prompt("Qual valor em vendas vocêe fez este mês:"))
+
+        comissaoFixa = 100 * carrosVendidos
+        salarioFinal = salariofixo + comissaoFixa + ((5/100) * valorVenda)
+        alert("O seu salário este mês será de " + salarioFinal)
+    </script>
+</body>
+</html>

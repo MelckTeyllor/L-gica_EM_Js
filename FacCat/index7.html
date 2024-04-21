@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica em JS</title>
+</head>
+<body>
+    <h2>Exercício 7 Faccat</h2>
+
+    <script>
+        let anos, meses, dias, idade;
+ 
+        alert("Vamos calcular a sua idade em anos, meses e dias");
+  
+        anos=parseInt(prompt("Digite sua idade em anos: "));
+        meses=parseInt(prompt("Digite a quantidade de meses completos que passou do seu último aniversário: "));
+        dias=parseInt(prompt("Digite a quantidade de dias que passou do seu último mêsversário:"));
+  
+        idade = (anos * 365 + meses * 30 + dias);
+  
+        alert("Você completou " +idade+ " dias de vida.")
+    </script>
+</body>
+</html>

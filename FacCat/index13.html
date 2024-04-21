@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+<body>
+    <p>Exibir nota final de aluno (Media Ponderada)
+
+    </p>
+
+    <script>
+      
+       let primeiraNota = parseFloat(prompt("Digite o valor da sua primeira nota:"));
+
+       let segundaNota = parseFloat(prompt("Digite o valor da sua segunda nota:"));
+       let terceiraNota = parseFloat(prompt("Digite o valor da sua terceira nota:"));
+       
+       let mediaFinal = (primeiraNota * 2 + segundaNota * 3 + terceiraNota*5)/10;
+
+       alert(`O valor da sua nota final foi ${mediaFinal}`)
+       
+    </script>
+</body>
+</html>
