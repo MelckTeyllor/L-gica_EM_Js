@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+<body>
+    <p>Calculo de estoque</p>
+
+    <script>
+       let estoqueAtual = parseInt(prompt("Qual a quantidade atual do produto no estoque?"));
+       let quantidadeMax = parseInt(prompt("Qual a capacidade máxima do estoque?"));
+       let quantidadeMin = parseInt(prompt("Qual a capacide mínima do estoque?"));
+
+       let quantidadeMed = (quantidadeMax + quantidadeMin)/2;
+
+       if(estoqueAtual >= quantidadeMed){
+        alert("Não é necessário efetuar a compra de mais desse produto")
+       }else {
+        alert("É necessário que efetue a compra desse produto")
+       }
+
+    </script>
+</body>
+</html>

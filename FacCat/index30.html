@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+<body>
+    <p> Exibir ordem crescente dos valores lidos</p>
+
+    <script>
+       let auxiliar;
+       let valor1 = parseInt(prompt("Digite um número"));
+       let valor2 = parseInt(prompt("Digite um número"));
+       let valor3 = parseInt(prompt("Digite um número")); 
+
+       if (valor1 != valor2 && valor1 != valor3 && valor2 != valor3 ){
+            if (valor1 > valor2){
+                auxiliar = valor1;
+                valor1 = valor2;
+                valor2 = auxiliar
+            }
+
+
+            if (valor2 > valor3){
+                auxiliar = valor2;
+                valor2 = valor3;
+                valor3 = auxiliar;
+            }
+
+            if (valor1 > valor2){
+                auxiliar = valor1;
+                valor1 = valor2;
+                valor2 = auxiliar
+            }
+       }else {
+        alert("ERRO!Não digite valores iguais")
+       }
+       alert(`Valores em ordem crescente: ${valor1}, ${valor2}, ${valor3}`)
+
+
+    </script>
+</body>
+</html>

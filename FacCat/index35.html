@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+<body>
+    <p> Valor Pago por Combustivel desejado</p>
+
+    <script>
+        let combustivel = prompt("Digite qual combustivel deseja, Alcool ou Gasolina?") ;
+        let litros = parseFloat(prompt("Digite a quantidade de litros que deseja abastecer:"));
+        let valorA;
+        let valorG;
+
+        //Logica do Alcool
+        if (combustivel == "alcool" || combustivel == "Alcool" && litros <= 20){
+            valorA = litros * (2.90 -(2.90* (3/100)))
+            alert(`O valor a se pagar é de: R$${valorA.toFixed(2)}`)
+        }else if (combustivel == "alcool" || combustivel == "Alcool" && litros > 20){
+            valorA = litros * (2.90-(2.90* (5/100)))
+            alert(`O valor a se pagar é de: R$${valorA.toFixed(2)}`)
+        }
+
+        //Logica da Gasolina
+        if (combustivel == "Gasolina" || combustivel == "gasolina" && litros <= 20){
+            valorG = litros * (3.30-(3.30* (4/100)))
+            alert(`O valor a se pagar é de: R$${valorG.toFixed(2)}`)
+        }else if (combustivel == "Gasolina" || combustivel == "gasolina" && litros > 20){
+            valorG = litros * (3.30-(3.30* (6/100)))
+            alert(`O valor a se pagar é de: R$${valorG.toFixed(2)}`)
+        }
+    </script>
+</body>
+</html>

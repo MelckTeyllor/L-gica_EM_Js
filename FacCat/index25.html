@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+<body>
+    <p>Calcular saldo de conta bancaria</p>
+
+    <script>
+       let nConta = parseInt(prompt("Digite o número de sua conta:"));
+       let vDebito = parseInt(prompt("Digite o valor em débito na sua conta: "));
+       let vCredito = parseInt(prompt("Digite o valor em crédito em sua conta: "));
+       let saldo = parseInt(prompt("Digite o saldo em sua conta:"));
+
+       let saldoAtual  = saldo - vDebito + vCredito;
+
+       alert(` Seu Saldo atual é de R$${saldoAtual}`);
+
+       if (saldoAtual <0) {
+        alert("Você está com saldo NEGATIVO")
+       }else if(saldoAtual = 0){
+            alert("Sua conta está zerada")
+       }else {
+        alert("O saldo da sua conta  está POSITIVO")
+       }
+
+       
+
+    </script>
+</body>
+</html>

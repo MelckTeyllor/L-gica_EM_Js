@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+<body>
+    <p>Calcular Peso Ideal</p>
+
+    <script>
+        let nome = prompt("Digite seu nome:");
+        let altura = parseFloat(prompt("Digite sua altura:"));
+        let sexo = prompt("Digite seu sexo:");
+        let pesoIdeal;
+
+        if (sexo == "masculino" || sexo == "Masculino"){
+            pesoIdeal = (72.7 * altura) - 58;
+            alert(`${nome} o seu peso idela seria de: ${pesoIdeal.toFixed(2)}kg` )
+        }else if (sexo == "feminino" || sexo == "Feminino"){
+            pesoIdeal = (62.1 * altura) - 44.7;
+            alert(`${nome} o seu peso idela seria de ${pesoIdeal.toFixed(2)}kg` )
+        } else {
+            alert("Erro nas informações")
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+<body>
+    <p>Verificar aprovção de aluno</p>
+
+    <script>
+        let nota1 = parseFloat(prompt("Digite o valor da sua primeira nota:"))
+        let nota2 = parseFloat(prompt("Digite o valor da sua segunda nota:"))
+        let nota3 = parseFloat(prompt("Digite o valor da sua terceira nota:"))
+        let nota4 = parseFloat(prompt("Digite o valor da sua quarta nota:"))
+        let media = (nota1 + nota2 + nota3 + nota4) / 4
+
+        if(media < 6){
+            alert(`Sinto muito, você foi reprovado. Sua nota foi ${media}`)
+        }else{
+            alert(`Parabens, você foi aprovado. Sua nota foi ${media}`)
+        }
+
+
+    </script>
+</body>
+</html>

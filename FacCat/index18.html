@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+<body>
+    <p>Verificar se o voto do usuário é opcional, obrigatório ou proibido</p>
+
+    <script>
+        let anoAtual = parseInt(prompt("Digite o ano em que estamos atualmente:"));
+        let anoNascimento = parseInt(prompt("Digite o ano de seu nascimento:"));
+
+        let idade = anoAtual - anoNascimento;
+        if(idade < 0){
+            alert("Idade invalida")
+        }else if(idade<16){
+            alert("VOTO PROIBIDO")
+        }else if(idade < 18){
+            alert("VOTO OPCIONAL")
+        }else if(idade >=18){
+            alert("VOTO OBRIGATÓRIO")
+        }
+    </script>
+</body>
+</html>

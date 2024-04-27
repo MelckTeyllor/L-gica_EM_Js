@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+<body>
+    <p>Ler dois valores e escrever em ordem crescente</p>
+
+    <script>
+      let valor1 = parseInt(prompt("Digite um númmero inteiro: "));
+      let valor2 = parseInt(prompt("Digite outro número inteiro:"));
+
+      if(valor1 == valor2){
+        alert("Erro! Não pode ser digitado números iguais")
+      }else if (valor2 < valor1){
+        alert(`A ordem crescente desses valores é: ${valor2}, ${valor1}`)
+      }else {
+        alert(`A ordem crescente desses valores é: ${valor1}, ${valor2}`)
+      }
+    </script>
+</body>
+</html>
