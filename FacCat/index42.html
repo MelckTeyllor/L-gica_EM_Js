@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+
+<body>
+    <p>Verificar aposentadoria</p>
+
+    <script>
+
+        let numero_empregado = parseInt(prompt("Digite o codigo de funcionário:"));
+        let ano_nascimento = parseInt(prompt("Digite o seu ano de nascimento:"));
+        let ano_atual = parseInt(prompt("Digite o ano atual:"));
+        let ano_empresa = parseInt(prompt("Digite o ano que entrou na empresa:"));
+
+
+
+        let anos_trabalhados = ano_atual - ano_empresa;
+        let idade = ano_atual - ano_nascimento;
+        
+
+        if (idade >= 65 || anos_trabalhados >= 30) {
+            aposentadoria = "Requerer Aposentadoria";
+        } else if (idade >= 60 && anos_trabalhados >= 25) {
+                aposentadoria = "Pode requerer Aposentadoria";
+            } else {
+                aposentadoria = "Não pode Requerer";
+            }
+        alert(`De acordo com suas informações você: ${aposentadoria}`);
+    </script>
+</body>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+
+<body>
+    <p> O resultado da soma da idade da mulher mais nova com o homem mais velho e o resultado do produto da idade do homem mais novo com a mulher mais velha.</p>
+
+    <script>
+        let soma;
+        let produto;
+        let idadeM1 = parseInt(prompt("Digite a idade da primeira Mulher:"));
+        let idadeM2 = parseInt(prompt("Digite a idade da segunda Mulher:"));
+        let idadeH1 = parseInt(prompt("Digite a idade da primeiro Homem:"));
+        let idadeH2 = parseInt(prompt("Digite a idade da segundo Homem:"));
+
+        if (idadeM1 < idadeM2 && idadeH1 > idadeH2) {
+            soma = idadeM1 + idadeH1;
+        } else if (idadeM1 > idadeM2 && idadeH1 < idadeH2) {
+            soma = idadeM2 + idadeH2;
+        } else {
+            if (idadeM1 > idadeM2 && idadeH1 > idadeH2) {
+                soma = idadeM2 + idadeH1;
+            } else if (idadeM1 < idadeM2 && idadeH1 < idadeH2) {
+                soma = idadeM1 + idadeH2;
+            }
+        }
+
+        if (idadeM1 < idadeM2 && idadeH1 > idadeH2) {
+            produto = idadeM2 * idadeH2;
+        } else if (idadeM1 > idadeM2 && idadeH1 < idadeH2) {
+            produto = idadeM1 * idadeH1;
+        } else {
+            if (idadeM1 > idadeM2 && idadeH1 > idadeH2) {
+                produto = idadeM1 * idadeH2;
+            } else if (idadeM1 < idadeM2 && idadeH1 < idadeH2) {
+                produto = idadeM2 * idadeH1;
+            }
+        }
+
+        alert(`O resultado da soma da idade da mulher mais nova com o homem mais velho é de ${soma}`);
+        alert(`O resultado do produto da idade do homem mais novo com a mulher mais velha é de ${produto}`);
+    </script>
+</body>
+
+</html>

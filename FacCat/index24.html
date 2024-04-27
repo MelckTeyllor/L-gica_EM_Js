@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+<body>
+    <p>Calcular salário com base em comissao de vendas</p>
+
+    <script>
+        let salarioFixo = parseFloat(prompt("Digite o valor de seu salário fixo:"));
+        let valorVendas = parseFloat(prompt("Qual valor em vendas você fez esse mês?"));
+        let salarioFinal;
+
+
+        if(valorVendas <= 1500){
+            salarioFinal = (3/100)*valorVendas + salarioFixo;
+            alert(`O seu salário esse mês será de: R$ ${salarioFinal}`)
+        } else {
+            salarioFinal = (5/100)*valorVendas + salarioFixo;
+            alert(`O seu salário esse mês será de: R$ ${salarioFinal}`)
+        }
+
+    </script>
+</body>
+</html>

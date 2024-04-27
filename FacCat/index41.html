@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+
+<body>
+    <p>Calcular media de notas</p>
+
+    <script>
+        let primeira_nota = parseFloat(prompt("Digite a primeira sua nota:"));
+        let segunda_nota = parseFloat(prompt("Digite a segunda sua nota:"));
+        let terceira_nota = parseFloat(prompt("Digite a terceira sua nota:"));
+        let media_exercicios = parseFloat(prompt("Digite a media de exercícios feitos:"));
+
+
+
+
+
+         let media_aproveitamento = (primeira_nota + (segunda_nota * 2) + (terceira_nota * 3) + media_exercicios) / 7;
+         let  avaliacao_final;
+
+        if (media_aproveitamento >= 9) {
+            avaliacao_final = "A";
+        } else if (media_aproveitamento >= 7.5 && media_aproveitamento < 9) {
+                avaliacao_final = "B";
+            } else if (media_aproveitamento >= 6 && media_aproveitamento < 7.5) {
+                    avaliacao_final = "C";
+                } else if (media_aproveitamento < 6) {
+                        avaliacao_final = "D";
+                    }
+
+
+        alert(`A sua nota final é: ${avaliacao_final}`);
+    </script>
+</body>

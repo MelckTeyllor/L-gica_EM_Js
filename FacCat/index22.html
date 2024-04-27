@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+<body>
+    <p>Calcular salário com base nas horas extras</p>
+
+    <script>
+      let salarioFixo = parseFloat(prompt("Digite o valor do seu salário fixo:"));
+      let horasTrabalhadas = parseFloat(prompt("Quantas horas foram trabalhadas esse mês?:"));
+      let valorHora = parseFloat(prompt("Qual valor pela hora regular trablhada?"));
+      let salarioPorHora;
+      let salarioFinal;
+      let acrescimo;
+
+      if (horasTrabalhadas/4 > 40){
+        salarioPorHora = valorHora * ((horasTrabalhadas/4) - 40) + (50/100)
+        salarioFinal = (salarioPorHora * 4) + salarioFixo;
+        acrescimo = salarioPorHora * 4;
+        alert(`O salário desse mês terá um acréscimo de: R$ ${acrescimo}`);
+        alert(`O salário final é de: R$ ${salarioFinal}`);
+      }else {
+        alert(`O salário do mês é de: R$ ${salarioFinal.tofixed(2)}. Você naõ fez horas extras esse mês`)
+      }
+
+    </script>
+</body>
+</html>

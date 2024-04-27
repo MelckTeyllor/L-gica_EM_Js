@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+<body>
+    <p> Partida de FUTEBOL</p>
+
+    <script>
+        let timeA = prompt("Digite o nome do primeiro TIME:");
+        let gTimeA = parseInt(prompt(`Digite quantos gols marcou o ${timeA}`));
+
+        let timeB = prompt("Digite o nome do segundo TIME:");
+        let gTimeB = parseInt(prompt(`Digite quantos gols marcou o ${timeB}`));
+
+        alert(`${timeA} ${gTimeA}  X  ${gTimeB} ${timeB}`);
+
+        if (gTimeA > gTimeB){
+            alert(`PAREBÉNS ${timeA}, vocês foram os vencedores`)
+        }else if (gTimeB > gTimeA){
+            alert(`PAREBÉNS ${timeB}, vocês foram os vencedores`)
+        } else {
+            alert("Esse jogo foi empate...")
+        }
+    </script>
+</body>
+</html>

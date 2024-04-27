@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+<body>
+    <p>Calcular horas de duração de uma partida de xadrez</p>
+
+    <script>
+      let inicioJogo = parseFloat(prompt("Digite a hora que a partida começou:"));
+      let fimJogo = parseFloat(prompt("Digite a hora do fim da partida:"));
+
+      let duracaoJogo = fimJogo - inicioJogo;
+      
+      if (fimJogo == inicioJogo) {
+        duracaoJogo = inicioJogo - fimJogo + 24
+        alert(`A duração da partida foi de: ${duracaoJogo}h`)
+      } else if (fimJogo < inicioJogo){
+        duracaoJogo = fimJogo - inicioJogo + 24;
+        alert(`A duração da partida foi de: ${duracaoJogo}h`)
+      } else {
+        alert(`A duração da partida foi de: ${duracaoJogo}h`)
+      }
+    </script>
+</body>
+</html>

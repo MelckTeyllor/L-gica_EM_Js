@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+
+<body>
+    <p> Desconto em morangos e maçãs</p>
+
+    <script>
+
+        let morango_kg = parseInt(prompt("Digite a quantidade de Morangos em kg:"));
+        let macas_kg = parseInt(prompt("Digite a quantidade de Maçãs em kg:"));
+        let preco_morango;
+        let preco_macas;
+        let quilos_total;
+        let total_compra;
+        let preco_final;
+        let taxa_desconto;
+
+
+
+
+        if (morango_kg <= 5) {
+            preco_morango = morango_kg * 2.5;
+            alert(`Preço dos morangos: R$${ preco_morango}`);
+        } else {
+            preco_morango = morango_kg * 2.2;
+            alert(`Preço dos morangos: R$${preco_morango}` );
+        }
+
+        if (macas_kg <= 5) {
+            preco_macas = macas_kg * 1.8;
+            alert(`Preço das maçãs: R$${preco_macas}` );
+        } else {
+            preco_macas = macas_kg * 1.5;
+            alert(`Preço das maçãs: R$${ preco_macas}`);
+        }
+
+        quilos_total = morango_kg + macas_kg;
+
+        total_compra = preco_macas + preco_morango;
+
+        alert(`Preço total da compra: R$${total_compra}` );
+
+
+        if (quilos_total > 8 || total_compra > 25) {
+            taxa_desconto = 0.10 * total_compra;
+            preco_final = total_compra - taxa_desconto;
+
+            alert(`Preço total da compra com desconto: R$ ${preco_final}` );
+        }
+    </script>
+</body>

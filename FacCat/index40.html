@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício FACCAT</title>
+</head>
+
+<body>
+    <p>Valor produto</p>
+
+    <script>
+        let nome_produto = prompt("Digite o nome do produto desejado:");
+        let quantidade_produto = parseInt(prompt("Digite a quantidade do produto desejado:"));
+        let preco_unitario = parseInt(prompt("Digite o valor unitário do produto:"));
+        let valor_total;
+        let desconto;
+        let valor_final;
+
+        valor_total = preco_unitario * quantidade_produto
+        if (quantidade_produto <= 5) {
+            desconto = (2 / 100) * preco_unitario;
+        } else if (quantidade_produto > 5 && quantidade_produto <= 10) {
+            desconto = (3 / 100) * preco_unitario;
+        } else if (quantidade_produto > 10) {
+            desconto = (5 / 100) * preco_unitario;
+        }
+
+
+        valor_final = valor_total - desconto;
+
+        alert(`O total da compra é de: R$ ${valor_total.toFixed(2)}`);
+        alert(`Você teve o desconto de: R$ ${desconto.toFixed(2)}`);
+        alert(`O valor final a se pagar é de: R$${valor_final.toFixed(2)}`);
+    </script>
+</body>
